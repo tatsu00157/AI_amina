@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- トップページ -->
+  <url>
+    <loc>https://karin-lab.netlify.app/ai_amina/</loc>
+    <lastmod>2025-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+   <!-- プライバシーポリシー -->
+  <url>
+    <loc>https://karin-lab.netlify.app/ai_amina/pryvacy/anima-privacy-policy</loc>
+    <lastmod>2025-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+   <!-- 利用規約 -->
+  <url>
+    <loc>https://karin-lab.netlify.app/ai_amina/terms/amina-terms-of-service</loc>
+    <lastmod>2025-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+   <!-- 特定商取引法に基づく表記 -->
+  <url>
+    <loc>https://karin-lab.netlify.app/ai_amina/law/amina-law</loc>
+    <lastmod>2025-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+</urlset>

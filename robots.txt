@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://karin-lab.netlify.app/ai_amina/sitemap.xml

@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  #header {
+    background-color: #ffc0cb;
+    color: #2c2c54;
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  #header .container {
+    background-color: #ffc0cb;
+    margin: auto;
+    
+    display: block;
+  }
+
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px 0;
+  }
+
+  .logo-link {
+    display: inline-block;
+  }
+  .site-logo {
+    height: 48px;
+    width: auto;
+  }
+  
+  #header .home-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 4px 10px;
+    transition: all 0.2s ease;
+  }
+  
+  #header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: bold;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 16px auto;
+    padding: 16px;
+    background: #f8f9fa;
+    text-align: left;
+  }
+  .container p {
+    text-align: center;
+    font-size: 14px;
+  }
+  h2 {
+    text-align: center;
+    color: #0078d7;
+    font-size: 18px;
+    margin-top: 1.2em;
+  }
+  p, li {
+    font-size: 15px;
+    margin: 0.5em 0;
+    text-align: center;
+  }
+  ul {
+    padding-left: 1.2em;
+    list-style: none;
+  }
+  .circle-icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+  }
+  .qr-code {
+    text-align: center;
+    margin: 16px 0;
+  }
+  .qr-code img {
+    width: 160px;
+    height: 160px;
+    max-width: 90%;
+  }
+  .contact p {
+      font-size: 15px;
+    }
+    .contact a {
+      font-size: 20px;
+    }
+  .footer {
+    margin-top: 100px;
+    padding: 10px;
+    background-color: #c0c0c0;
+    font-size: 13px;
+    text-align: center;
+    
+  }
+  .footer-links {
+  text-align: center;
+  }
+
+  /* 特定商取引法 */
+  .law-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  .law-container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .law-container h2 {
+    color: #0078d7;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+  }
+  
+  table th {
+    background-color: #f8f8f8;
+    width: 30%;
+  }
+
+
+
+  /* レスポンシブ */
+  @media (max-width: 480px) {
+    .header-image img {
+      height: auto;
+      max-height: 200px;
+      object-fit: cover;
+    }
+    /* メインコンテンツ */
+    .container {
+      padding: 14px;
+      margin: 12px;
+    }
+    .container p {
+    text-align: center;
+    font-size: 12px;
+  }
+    h2 {
+      text-align: center;
+      font-size: 16px;
+    }
+    p, li {
+      font-size: 14px;
+    }
+    .qr-code img {
+      width: 140px;
+      height: 140px;
+    }
+    ul {
+      padding-left: 1em; /* 少し詰める */
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 15px; /* スマホ用に文字を小さめに */
+      line-height: 1.4;
+    }
+    ul li strong {
+      font-weight: bold;
+      font-size: 16px; /* 強調部分も詰めておく */
+    }
+    .plan-name::after {
+      content: "";
+      display: block; /* 改行 */
+    }
+    .plan-desc {
+      display: block;
+      margin-left: 1em; /* 説明を少しインデント */
+    }
+    .image_plan li {
+      font-size: 12px;
+    }
+    .image_plan li:nth-child(2) {
+      font-size: 14px;
+    }
+    .image_plan li:nth-child(3) {
+      font-size: 11px;
+    }
+    .help li {
+      font-size: 13px;
+    }
+    .help li:nth-child(2) {
+      font-size: 16px;
+    }
+    .help p {
+      font-size: 16px;
+    }
+    .contact p {
+      font-size: 14px;
+    }
+    .contact a {
+      font-size: 17px;
+    }
+
+    /* フッター */
+    .footer {
+      font-size: 12px;
+      padding: 8px;
+    }
+    .footer p {
+      font-size: 11px;
+    }
+    .footer-inline-links {
+      display: inline-block;
+    }
+    .footer-law-link {
+      margin-top: 5px;
+      display: block;
+    }
+  
+ }
