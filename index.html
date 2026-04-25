@@ -1,112 +1,270 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AIあみなは、LINEで使えるAIチャットボットです。雑談や相談ができるだけでなく、アニメ風の画像も生成できます。無料プランあり。LINEで癒し系AIと話してみよう！">
-    <meta name="google-site-verification" content="UR9AKXndNrSFl04kPsN54K4czgOaKLCCL823sKUUVfA" />
-    <meta name="robots" content="index, follow">
-    <title>AIあみな｜LINEで話せるAIチャットボット｜画像生成・雑談対応</title>
-    <link rel="canonical" href="https://tatsu00157.github.io/AI_amina/" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AIあみなは、LINEで使えるAIチャットボットです。雑談や相談ができるだけでなく、アニメ風の画像も生成できます。無料プランあり。LINEで癒し系AIと話してみよう！">
+  <meta name="google-site-verification" content="UR9AKXndNrSFl04kPsN54K4czgOaKLCCL823sKUUVfA" />
+  <meta name="robots" content="index, follow">
+  <title>AIあみな｜LINEで話せるAIチャットボット｜画像生成・雑談対応</title>
+  <link rel="canonical" href="https://tatsu00157.github.io/AI_amina/" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 
-  <header id="header">
-    <div class="container header-flex">
-      <a href="index.html" class="logo-link">
-        <img src="images/AI_amina_logo.png" alt="AIあみな ロゴ" class="site-logo" />
-      </a>
-    </div>
+<!-- ========== Header ========== -->
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="images/AI_amina_logo.png" alt="AIあみな ロゴ" class="site-logo">
+    </a>
+
+    <!-- PC nav -->
+    <nav class="header-nav">
+      <a href="#features">サービス紹介</a>
+      <a href="#pricing">料金プラン</a>
+      <a href="#howto">使い方</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+
+    <!-- Hamburger (mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="#features" class="mobile-nav-link">サービス紹介</a>
+      <a href="#pricing" class="mobile-nav-link">料金プラン</a>
+      <a href="#howto" class="mobile-nav-link">使い方</a>
+      <a href="#contact" class="mobile-nav-link">お問い合わせ</a>
+    </nav>
+  </div>
 </header>
 
-    <div class="container">
-        <h2><img src="images/AI_Amina_1.png" alt="AIあみなアイコン" class="circle-icon">
-             AIあみなとは？
-        </h2>
-        <p>AIあみなは、LINEで利用できるAIチャットボットです。
-          <br>あなたの日常の会話を楽しくサポートします！
-        </p>
+<!-- ========== Hero ========== -->
+<section class="hero">
+  <span class="hero-badge">Karin Lab × LINE AI</span>
+  <h1>
+    毎日の会話を、<br>
+    <span class="accent">もっと楽しく</span>してくれるAI。
+  </h1>
+  <p class="hero-sub">
+    AIあみなは、LINEで気軽に話せるAIチャットボット。<br>
+    雑談・相談・アニメ風画像生成まで、無料から始められます。
+  </p>
+  <div class="hero-actions">
+    <a href="https://page.line.me/349hkgne" target="_blank" class="btn-line">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="22" height="22" rx="5" fill="white" fill-opacity="0.2"/>
+        <path d="M11 4C7.134 4 4 6.8 4 10.25c0 2.9 2.3 5.35 5.5 6.1l.4 1.5c.07.27.37.35.57.2l1.8-1.3c.25.03.5.05.73.05C16.866 16.8 20 13.7 20 10.25 20 6.8 14.866 4 11 4z" fill="white"/>
+      </svg>
+      LINEで友だち追加する
+    </a>
+    <span class="hero-note">テキストチャットは無料でご利用いただけます</span>
+  </div>
+</section>
 
-        <h2>📲 友だち追加はこちら</h2>
-        <div class="qr-code">
-        <a href="https://page.line.me/349hkgne" target="_blank" style="background-color: #00c300; color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">
-            LINEで友だち追加する
-        </a>
-        </div>
-
-        <h2>💰 料金プラン（AIあみな - 画像生成サービス）</h2>
-        <p>AIあみなではLINE上でAIによる画像生成が利用できます。<br>
-          無料プランから始められ、より多くの画像を生成したい方にはプレミアムプランをご用意しています。
-        </p>
-        <ul>
-            <li><strong class="plan-name">無料プラン:</strong><span class="plan-desc">月3回までの画像生成が可能（¥0）</span></li>
-            <li><strong class="plan-name">500円プラン:</strong><span class="plan-desc">月30回までの画像生成が可能（¥500/月）</span></li>
-            <li><strong class="plan-name">1000円プラン:</strong><span class="plan-desc">月100回までの画像生成が可能（¥1000/月）</span></li>
-          </ul>
-        <p>⚠️ 料金は、AIあみなの画像生成機能に対して適用されます。<br>LINEでのテキストチャットは無料で利用できます。</p>
-        
-
-        <div class="image_plan">
-        <h2>🖼 画像生成の使い方・解約方法</h2>
-        <p>AIあみなでは、LINE上でテキストを送るだけで画像を生成できます。</p>
-        <ul>
-          <li><strong>画像の作り方:</strong><br>
-            LINEで「〇〇の画像作って！」と話しかけるだけでOK！<br>
-            例：「猫耳の女の子の画像作って」など✨<br>
-            詳細は、LINEで「画像ヘルプ」と送ると確認できます。
-          </li>
-          <li><strong>生成回数:</strong><br>
-            プランごとに毎月の画像生成回数が決まっています（毎月1日に自動リセット）<br>
-            デフォルトで無料プランに加入しています。
-          </li>
-          <li><strong>有料プラン解約方法:</strong><br>
-            LINEで「プラン解約」と送ると、キャンセル手続きができます。<br>
-            解約後も、契約期間までは回数を使い切ることができます💡<br>
-            ※契約期間は加入日によって異なります。<br>
-            例：4月6日に加入 → 5月5日までは利用可能
-          </li>
-        </ul>
+<!-- ========== Features ========== -->
+<div class="features-bg" id="features">
+  <section class="section">
+    <span class="section-label">Features</span>
+    <h2 class="section-title">AIあみなでできること</h2>
+    <p class="section-desc">LINEアプリひとつで、さまざまなAI機能が使えます。</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>雑談・相談</h3>
+        <p>日常の会話から悩み相談まで、あみなが自然な言葉で返事をしてくれます。</p>
       </div>
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>AI画像生成</h3>
+        <p>テキストを送るだけで、アニメ風のオリジナル画像を生成。細かいイメージも指定できます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>LINEで完結</h3>
+        <p>アプリの追加インストール不要。いつも使っているLINEから、そのまま使えます。</p>
+      </div>
+    </div>
+  </section>
+</div>
 
-      <div class="help">
-      <h2>📝 よくある質問（キーワード対応）</h2>
-      <p>LINEで以下のキーワードを送信すると、あみなが対応してくれます。</p>
-      <ul>
-        <li><strong>画像ヘルプ:</strong><br>画像の作り方やプロンプトのコツを教えてくれます。</li>
-        <li><strong>プラン解約:</strong><br>サブスクリプションの解約予約ができます。</li>
-        <li><strong>プラン確認:</strong><br>現在の契約プラン、請求日、次回切り替え予定などが確認できます。</li>
+<!-- ========== Pricing ========== -->
+<section class="section" id="pricing">
+  <span class="section-label">Pricing</span>
+  <h2 class="section-title">料金プラン</h2>
+  <p class="section-desc">テキストチャットは完全無料。画像生成機能のみ月額プランが必要です。</p>
+  <div class="pricing-grid">
+    <!-- Free -->
+    <div class="plan-card">
+      <p class="plan-name">Free</p>
+      <p class="plan-price">¥0 <span>/月</span></p>
+      <p class="plan-unit">まずは無料で試してみよう</p>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>テキストチャット（無制限）</li>
+        <li>画像生成 月3回まで</li>
       </ul>
-      <p>※キーワードはそのまま送信してください（例：「プラン解約」と送るだけでOK）</p>
     </div>
-
-        <div class="contact">
-        <h2>📞 お問い合わせ</h2>
-        <p>メール: 
-            <a href="mailto:support@karineffort.com?subject=【AIあみな】サポートへのお問い合わせ&body=件名は変えずにお問い合わせ内容を送信してください">
-              support@karineffort.com
-            </a>
-          </p>
-
-        <h2>📌 返金・キャンセルポリシー</h2>
-        <p>本サービスはデジタルサービスのため、返金には対応しておりません。サブスクリプションはいつでも解約可能です。</p>
-      </div>
-
+    <!-- 500 -->
+    <div class="plan-card featured">
+      <span class="plan-badge">人気プラン</span>
+      <p class="plan-name">Standard</p>
+      <p class="plan-price">¥500 <span>/月</span></p>
+      <p class="plan-unit">ライトユーザーにおすすめ</p>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>テキストチャット（無制限）</li>
+        <li>画像生成 月30回まで</li>
+      </ul>
     </div>
+    <!-- 1000 -->
+    <div class="plan-card">
+      <p class="plan-name">Premium</p>
+      <p class="plan-price">¥1,000 <span>/月</span></p>
+      <p class="plan-unit">たっぷり使いたい方に</p>
+      <hr class="plan-divider">
+      <ul class="plan-features">
+        <li>テキストチャット（無制限）</li>
+        <li>画像生成 月100回まで</li>
+      </ul>
+    </div>
+  </div>
+  <p class="plan-note">
+    ⚠️ 画像生成の利用回数は毎月1日に自動リセットされます。<br>
+    解約後も、契約期間の終了まで引き続きご利用いただけます。
+  </p>
+</section>
 
-    <div class="footer">
-        <p>© 2025 Karin Lab. All rights reserved.</p>
-        <p>このサービス「AIあみな」は、<strong>Karin Lab</strong> によって提供されています。</p>
-      
-        <div class="footer-links">
-            <div class="footer-inline-links">
-              <a href="pryvacy/anima-privacy-policy.html">プライバシーポリシー</a> | 
-              <a href="terms/amina-terms-of-service.html">利用規約</a> | 
-              <a href="law/amina-law.html">特定商取引法に基づく表記</a>
-            </div>
-          </div>
+<!-- ========== How to use ========== -->
+<div class="howto-bg" id="howto">
+  <section class="section">
+    <span class="section-label">How to Use</span>
+    <h2 class="section-title">画像生成の使い方</h2>
+    <p class="section-desc">LINEでメッセージを送るだけ。難しい操作は一切ありません。</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>友だち追加</h3>
+          <p>下のボタンからAIあみなを友だちに追加します。</p>
+        </div>
       </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>画像をリクエスト</h3>
+          <p>「猫耳の女の子の画像作って」のように話しかけるだけでOK。詳細は「画像ヘルプ」と送ると確認できます。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>画像を受け取る</h3>
+          <p>しばらく待つと、AIが生成した画像が届きます。保存・二次創作も可能です。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>プランのアップグレード（任意）</h3>
+          <p>もっとたくさん使いたい場合は、LINEで「プラン確認」と送ってプランを選べます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========== Keywords ========== -->
+<section class="section">
+  <span class="section-label">Keywords</span>
+  <h2 class="section-title">便利なキーワード一覧</h2>
+  <p class="section-desc">LINEで以下のキーワードをそのまま送信すると、あみなが対応します。</p>
+  <div class="keywords-grid">
+    <div class="keyword-card">
+      <span class="keyword-tag">画像ヘルプ</span>
+      <p>画像の作り方やプロンプトのコツを教えてくれます。</p>
+    </div>
+    <div class="keyword-card">
+      <span class="keyword-tag">プラン確認</span>
+      <p>現在の契約プラン・請求日・次回切り替え予定を確認できます。</p>
+    </div>
+    <div class="keyword-card">
+      <span class="keyword-tag">プラン解約</span>
+      <p>サブスクリプションの解約予約ができます。期間終了まで使い続けられます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA Banner ========== -->
+<div class="cta-banner">
+  <h2>まずは無料で始めてみよう</h2>
+  <p>友だち追加は30秒。テキストチャットはずっと無料です。</p>
+  <a href="https://page.line.me/349hkgne" target="_blank" class="btn-line">
+    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="22" height="22" rx="5" fill="white" fill-opacity="0.2"/>
+      <path d="M11 4C7.134 4 4 6.8 4 10.25c0 2.9 2.3 5.35 5.5 6.1l.4 1.5c.07.27.37.35.57.2l1.8-1.3c.25.03.5.05.73.05C16.866 16.8 20 13.7 20 10.25 20 6.8 14.866 4 11 4z" fill="white"/>
+    </svg>
+    LINEで友だち追加する
+  </a>
+</div>
+
+<!-- ========== Contact ========== -->
+<section class="section" id="contact">
+  <span class="section-label">Contact</span>
+  <h2 class="section-title">お問い合わせ</h2>
+  <div class="contact-box">
+    <h3>サポート窓口</h3>
+    <p>ご不明な点はメールにてお問い合わせください。順次返信いたします。</p>
+    <a href="mailto:support@karineffort.com?subject=【AIあみな】サポートへのお問い合わせ&body=件名は変えずにお問い合わせ内容を送信してください" class="contact-email">
+      ✉ support@karineffort.com
+    </a>
+    <div class="refund-note">
+      <strong>返金・キャンセルについて</strong><br>
+      デジタルサービスの特性上、購入後の返金はお受けしておりません。サブスクリプションはいつでも解約可能です。
+    </div>
+  </div>
+</section>
+
+<!-- ========== Footer ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-brand">AIあみな by Karin Lab</p>
+    <p class="footer-copy">© 2025 Karin Lab. All rights reserved.</p>
+    <div class="footer-inline-links">
+      <a href="pryvacy/anima-privacy-policy.html">プライバシーポリシー</a>
+      <a href="terms/amina-terms-of-service.html">利用規約</a>
+      <a href="law/amina-law.html">特定商取引法に基づく表記</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('is-open');
+    mobileMenu.classList.toggle('is-open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  // メニュー項目タップで閉じる
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('is-open');
+      mobileMenu.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
 
 </body>
 </html>
