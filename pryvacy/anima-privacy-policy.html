@@ -15,10 +15,27 @@
     <a href="../index.html" class="logo-link">
       <img src="../images/AI_amina_logo.png" alt="AIあみな ロゴ" class="site-logo">
     </a>
-    <a href="https://page.line.me/349hkgne" target="_blank" class="header-cta">友だち追加</a>
+    <nav class="header-nav">
+      <a href="../index.html#features">サービス紹介</a>
+      <a href="../index.html#pricing">料金プラン</a>
+      <a href="../index.html#howto">使い方</a>
+      <a href="../index.html#contact">お問い合わせ</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-nav">
+      <a href="../index.html#features" class="mobile-nav-link">サービス紹介</a>
+      <a href="../index.html#pricing" class="mobile-nav-link">料金プラン</a>
+      <a href="../index.html#howto" class="mobile-nav-link">使い方</a>
+      <a href="../index.html#contact" class="mobile-nav-link">お問い合わせ</a>
+    </nav>
   </div>
 </header>
 
+<main class="page-body">
 <div class="legal-wrap">
   <h2>プライバシーポリシー</h2>
 
@@ -59,6 +76,7 @@
 
   <p>本ポリシーは、必要に応じて更新されることがあります。</p>
 </div>
+</main>
 
 <footer class="footer">
   <div class="footer-inner">
@@ -72,5 +90,21 @@
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('is-open');
+    mobileMenu.classList.toggle('is-open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('is-open');
+      mobileMenu.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', false);
+    });
+  });
+</script>
 </body>
 </html>
