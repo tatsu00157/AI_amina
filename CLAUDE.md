@@ -93,17 +93,18 @@ font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino San
 
 ## ページ構成（index.html）
 
-| # | セクション   | id          | 内容                                     |
-|---|------------|-------------|------------------------------------------|
-| 1 | Header     | `#header`   | ロゴ＋PCナビ＋ハンバーガー（sticky）       |
-| 2 | Hero       | —           | キャッチコピー＋LINEボタン＋バッジ         |
-| 3 | Features   | `#features` | 機能カード3枚（チャット/画像生成/LINE完結） |
-| 4 | Pricing    | `#pricing`  | 料金プラン3列カード                        |
-| 5 | How to Use | `#howto`    | ステップ形式（番号＋縦ライン）             |
-| 6 | Keywords   | —           | LINEキーワード3種                          |
-| 7 | CTA Banner | —           | ピンクグラデーション全幅バナー＋LINEボタン |
-| 8 | Contact    | `#contact`  | お問い合わせ＋返金ポリシー                 |
-| 9 | Footer     | —           | 法的リンク3点                              |
+| #  | セクション      | id          | 内容                                     |
+|----|--------------|-------------|------------------------------------------|
+| 1  | Header       | `#header`   | ロゴ＋PCナビ＋ハンバーガー（sticky）       |
+| 2  | Notice       | —           | 画像生成一時停止のお知らせバナー（amber色） |
+| 3  | Hero         | —           | キャッチコピー＋LINEボタン＋バッジ         |
+| 4  | Features     | `#features` | 機能カード3枚（チャット/画像生成/LINE完結） |
+| 5  | Pricing      | `#pricing`  | 料金プラン3列カード                        |
+| 6  | How to Use   | `#howto`    | ステップ形式（番号＋縦ライン）             |
+| 7  | Keywords     | —           | LINEキーワード3種                          |
+| 8  | CTA Banner   | —           | ピンクグラデーション全幅バナー＋LINEボタン |
+| 9  | Contact      | `#contact`  | お問い合わせ＋返金ポリシー                 |
+| 10 | Footer       | —           | 法的リンク3点                              |
 
 ---
 
@@ -185,3 +186,14 @@ font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino San
 - SVG の LINE アイコンはインライン埋め込み（外部依存なし）
 - `body { background: var(--dark) }` のため、コンテンツは必ず `<main class="page-body">` でラップすること
 - 法的ページでスペーシングが必要な場合は margin ではなく padding を使うこと（margin collapse がフッター上に暗いギャップを生む）
+
+---
+
+## 一時的な状態（復旧後に削除）
+
+### AI画像生成 一時停止中
+
+- `<main class="page-body">` 直後に `.notice-banner`（amber色帯）を表示中
+- Featuresセクションの画像生成カードに `.feature-unavailable-badge`（「⚠️ 現在一時停止中」）を表示中
+- Standardプランのバッジは「人気プラン」→「おすすめ」に変更済み（ユーザー登録がいない段階で「人気」は不正確なため）
+- 復旧時の作業: `notice-banner` div と `feature-unavailable-badge` span を削除するだけでよい

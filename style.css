@@ -634,6 +634,32 @@ img { max-width: 100%; display: block; }
 
 .law-table td { color: var(--mid); }
 
+/* ---------- Notice Banner ---------- */
+.notice-banner {
+  background: #FFF8E6;
+  border-bottom: 2px solid #F5A623;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #7A4F00;
+  line-height: 1.6;
+}
+
+.notice-banner strong { font-weight: 700; }
+
+/* Feature card: unavailable badge */
+.feature-unavailable-badge {
+  display: inline-block;
+  background: #FFF3CD;
+  color: #856404;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid #FFCC00;
+  margin-top: 10px;
+}
+
 /* ---------- Utility ---------- */
 .text-center { text-align: center; }
 
